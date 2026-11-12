@@ -8,6 +8,7 @@ export default function LiftingStateParent() {
   // We keep 'count' in the parent so both Sibling A and Sibling B can access and modify it.
   const [count, setCount] = useState(0);
   const incrementCount = () => setCount(count + 1);
+  const resetCount = () => setCount(0);
 
   return (
     <View style={styles.section}>
@@ -18,11 +19,13 @@ export default function LiftingStateParent() {
         childName="Sibling A"
         sharedCount={count}
         onIncrement={incrementCount}
+        reset={resetCount}
       />
       <LiftingStateChild
         childName="Sibling B"
         sharedCount={count}
         onIncrement={incrementCount}
+        reset={resetCount}
       />
     </View>
   );

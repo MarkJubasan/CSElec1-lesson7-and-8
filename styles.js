@@ -38,6 +38,6 @@ export const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: 'gray',
     padding: 10,
-    marginTop: 5,
+    marginTop: 10,
   }
 });

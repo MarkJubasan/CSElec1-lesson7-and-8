@@ -2,6 +2,7 @@ import { ScrollView, View, Text } from 'react-native';
 import { styles } from './styles';
 import LiftingStateParent from './LiftingStateUp/LiftingStateParent';
 import PropDrillingExample from './ContextAPI_ProDrill/PropDrillingExample';
+import ContextExample from './ContextAPI_ProDrill/ContextExample';
 
 export default function ManagingStateUIfeedback () {
     return (
@@ -16,6 +17,7 @@ export default function ManagingStateUIfeedback () {
 
                     <LiftingStateParent />
                     <PropDrillingExample/>
+                    <ContextExample/>
                 </View>
             </ScrollView>
     

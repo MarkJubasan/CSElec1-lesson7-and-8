@@ -4,8 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 // Import our individual screen components 
 import HomeScreen from './HomeScreen' ;
 import ProfileScreen from './ProfileScreen';
-
-import LiftingStateParent from './LiftingStateUp/LiftingStateParent';
+import ManagingStateUIfeedback from './ManagingStateUIfeedback';
 
 // 1. Initialize the Tab Navigator object 
 
@@ -13,13 +12,6 @@ const Tab = createBottomTabNavigator();
 
 export default function App() {
     return (
-
-
-
-
-
-
-
 
     // 2. Navigation Container MUST be the outermost component 
     <NavigationContainer>
@@ -37,6 +29,12 @@ export default function App() {
             name="Home"
             component={HomeScreen}
             options={{ title: 'Feed' }} // The text shown on the tab button
+          />
+
+          <Tab.Screen  
+            name="sampleCode"
+            component={ManagingStateUIfeedback}
+            options={{ title: 'Lessons7' }} 
           />
 
           <Tab.Screen

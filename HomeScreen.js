@@ -1,8 +1,6 @@
 import { View, Text } from 'react-native'; 
 import { styles } from './styles';
 
-import LiftingStateParent from './LiftingStateUp/LiftingStateParent';
-
 export default function HomeScreen () {
     return (
     <View style={styles.container}>
@@ -12,7 +10,6 @@ export default function HomeScreen () {
             This is the main feed. Notice that when you switch tabs and come back, this screen doesn't have to reload from scratch.
         </Text>
 
-        <LiftingStateParent />
     </View>
     );
 }

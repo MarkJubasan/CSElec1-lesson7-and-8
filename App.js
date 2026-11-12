@@ -2,8 +2,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 // Import our individual screen components 
-import HomeScreen from './HomeScreen' 
-import ProfileScreen from './ProfileScreen';
+import HomeScreen from './HomeScreen';
+import ProfileScreen from './ProfileScreen.';
 
 // 1. Initialize the Tab Navigator object 
 

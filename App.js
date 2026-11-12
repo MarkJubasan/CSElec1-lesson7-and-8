@@ -5,6 +5,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from './HomeScreen' ;
 import ProfileScreen from './ProfileScreen';
 import ManagingStateUIfeedback from './ManagingStateUIfeedback';
+import Lesson8Screen from './Lesson8Screen';
 
 // 1. Initialize the Tab Navigator object 
 
@@ -34,7 +35,13 @@ export default function App() {
           <Tab.Screen  
             name="sampleCode"
             component={ManagingStateUIfeedback}
-            options={{ title: 'Lessons7' }} 
+            options={{ title: 'Lesson7' }} 
+          />
+
+          <Tab.Screen  
+            name="sampleCode1"
+            component={Lesson8Screen}
+            options={{ title: 'Lesson8' }} 
           />
 
           <Tab.Screen

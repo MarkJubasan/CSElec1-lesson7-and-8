@@ -3,6 +3,7 @@ import { styles } from './styles';
 import LiftingStateParent from './LiftingStateUp/LiftingStateParent';
 import PropDrillingExample from './ContextAPI_ProDrill/PropDrillingExample';
 import ContextExample from './ContextAPI_ProDrill/ContextExample';
+import DataFetcher from './HandlingLoad_ErrorStates/DataFetcher';
 
 export default function ManagingStateUIfeedback () {
     return (
@@ -18,6 +19,7 @@ export default function ManagingStateUIfeedback () {
                     <LiftingStateParent />
                     <PropDrillingExample/>
                     <ContextExample/>
+                    <DataFetcher/>
                 </View>
             </ScrollView>
     
